@@ -1,0 +1,804 @@
+/*
+Theme Name: Meerkats Theme
+Theme URI: http://www.labsixtyfive.com
+Description: Simple wordpress theme built around responsive web design and media queries technqiues
+Author: Gregor McKelvie
+Version: 1.2
+Tags: white, three-columns, flexible-width, threaded-comments
+Author URI: http://www.twitter.com/gregormckelvie
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/***********
+Page attributes
+************/
+section, nav, header, footer {
+	display: block;
+}
+
+body {
+	font-size: 15px;
+}
+
+body p {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: Arial;
+}
+
+h1#logo {
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 100px;
+}
+
+h2 {
+	font-family: Georgia;
+	font-weight: normal;
+	font-size: 30px;
+		text-shadow: #ccc 0px 1px 1px; /* added for 1.1 */
+}
+
+h3 {
+	font-family: Georgia;
+	font-weight: normal;
+	font-size: 22.5px;
+	text-shadow: #CCC 0px 1px 1px; /* added for 1.1 */
+}
+
+h1{
+	font-family: Georgia;
+	font-weight: normal;
+	font-size: 22.5px;
+	text-shadow: #CCC 0px 1px 1px; /* added for 1.1 */
+}
+
+h4 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 15px;
+	color: #303030;
+}
+
+.wrapper1 { /* Different in iPhone */
+	margin: 0 auto;
+	width: 960px;
+}
+
+li {
+	font-family: Arial;
+}
+
+a {
+	font-family: Arial;
+}
+
+a:link {
+	color: #990000;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#990000;
+	text-decoration:none;
+}
+
+#logo a {
+	color: #303030;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+p {
+	color: #404040;  /* added for 1.1 */
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+/***********
+Top section
+************/
+
+.header {
+	margin: 0 10px;
+	margin-bottom: 20px;
+	width: 700px;
+	float: left;
+	display: block;
+}
+
+.strapline {
+	margin: 0;
+	font-family: serif;
+	font-size: 1.25em;
+	color: none;
+	font-style: italic;
+	
+}
+
+/***********
+Navigation
+************/
+
+.navwrapper {
+	margin: 0 10px;
+	width: 220px;
+	float: right;
+	
+}
+
+.menu ul { /* Class that WP applies */
+	text-align: right;
+	font-family: Arial;
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+
+/***********
+Main
+************/
+
+.post_and_sides {
+	margin-top: 50px;
+}
+
+.wrapper2 {
+	width: 960px;
+	margin: 0;
+	float: left;
+	
+}
+
+.main {
+	width: 460px;
+	margin: 10px;
+	margin-top: 20px;
+	float: left;
+}
+
+#date {/* added for 1.1 */
+	background: #f0f0f0;
+	padding-left: 10px;
+	color: #404040;
+}
+
+.postimage {
+	max-width: 100%;
+}
+
+.post {
+	display: block;
+}
+
+.post h2 {
+	margin: 0;
+}
+
+.post h2 a {
+	margin: 0;
+	font-family: Georgia;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.post h2 a:link {
+	color: #003399;
+	text-decoration:none;
+}
+
+.post h2 a:visited {
+	color: #003399;
+}
+
+.post h2 a:hover {
+	text-decoration:underline;
+}
+
+.post li {
+	color: #303030;
+	line-height: 1.5em; /* added for 1.1 */
+	
+}
+
+img, object {/* edited for 1.2 */
+	max-width: 100%;
+	height: auto;
+}
+
+blockquote {
+	display: block;
+  	margin: 0px;
+  	padding: 10px;
+  	background-color: #f0f0f0;
+}
+
+blockquote p {
+	font-style: italic;
+	padding-left: 30px;
+  	font-size: 1.25em;
+  	line-height: 1.5em;
+	margin: 0;
+	font-family: Georgia;
+	font-weight: normal;
+  	color: #303030;
+}
+
+.youtube {
+	max-width: 100%;
+	max-height: auto;
+}
+
+.vimeo {
+	max-width: 100%;
+	height: auto;
+}
+
+/***********
+Comments
+************/
+
+.comments ol, .comments ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	line-height: 1.5em;
+}
+
+.comments ul {
+	padding-left: 40px;
+}
+
+.comment-body {
+	margin: 10px 0;
+	background-color: #f0f0f0;
+	padding: 10px;
+}
+
+img.avatar {
+	display: none;
+}
+
+.children {
+	background-color: #e0e0e0;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+.comment-form-author label, .comment-form-email label, .comment-form-url label {
+	display: block;
+	float: left;
+	width: 80px;
+}
+
+.comment-form-comment label {
+	display: block;
+	float: left;
+	width: 80px;
+}
+
+.required {
+	display: none;
+}
+
+.form-submit {
+	display: block;
+	padding-left: 80px;
+}
+
+#recaptcha_widget_div {
+	margin: 20px 0;
+}
+
+/***********
+Sidebar
+************/
+
+.sidebar1wrapper {
+	float: left;
+	margin: 10px;
+	width: 200px;
+	background-color: #f0f0f0;
+	padding: 10px;
+	display: block;
+}
+
+.sidebar1 {
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.widgetblock {
+	margin-bottom: 30px;
+}
+
+.widgetblock li {
+	margin-bottom: 15px;
+}
+
+.textwidget {
+	color: #303030;
+}
+
+.sidebar1 li {
+	list-style: none;
+}
+
+.sidebar1 ul {
+	padding: 0;
+	line-height: 1.5em;
+	margin: 10px 0;
+}
+
+.sidebar1 h2 {
+	margin: 0;
+	text-shadow: #fff 0px 1px 1px; /* added for 1.1 */
+}
+
+.sidebar2wrapper {
+	float: left;
+	margin: 10px;
+	width: 200px;
+	background-color: #f0f0f0;
+	padding: 10px;
+}
+
+.sidebar2 {
+	padding-left: 0px;
+	margin: 0px;	
+}
+
+.sidebar2 li {
+	list-style: none;
+}
+
+.sidebar2 ul {
+	padding: 0;
+	line-height: 2em;
+	margin: 10px 0;
+}
+
+.sidebar2 h2 {
+	margin: 0;
+	text-shadow: #fff 0px 1px 1px; /* added for 1.1 */
+}
+
+.textwidget {
+	line-height: 2em;
+	margin: 10px 0;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+#s {/* edited for 1.2 */
+	height: 20px;
+	width: 150px;
+	margin-bottom: 10px;
+}
+
+/***********
+Footer
+************/
+
+.footer {
+	margin: 0 10px;
+	width: 960px;
+	padding: 10px 0;
+	border-top-style: solid;
+	border-top-color: #e0e0e0;
+	border-top-width: 1px;
+	float: left;
+}
+
+.footer p {
+	margin: 0;
+	font-size: 0.75em;
+	text-align: center;
+	color: #b0b0b0;
+}
+
+/******************************* Media queries - two column desktop *************************************/
+
+@media (max-width: 960px) {
+
+/***********
+Page attributes
+************/
+
+h1#logo {
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 5em;
+}
+
+.wrapper1 {
+	width: 720px;
+}
+
+/***********
+Top section
+************/
+
+
+
+/***********
+Navigation
+************/
+
+.navwrapper {
+	margin: 10px;	
+}
+
+.menu ul {
+		text-align: left;
+}
+
+/***********
+Main
+************/
+
+.wrapper2 {
+	width: 720px;
+}
+
+/***********
+Sidebar
+************/
+
+
+/***********
+Footer
+************/
+
+.footer {
+	width: 720px;
+}
+
+}
+
+/****************************** Media queries - one column *************************/
+
+@media (max-width: 720px) {
+
+/***********
+Page attributes
+************/
+
+h1#logo {
+	font-size: 3em;
+}
+
+.wrapper1 {
+	width: 100%;
+	margin: 0;
+
+}
+
+/***********
+Top section
+************/
+
+.header {
+	width: 100%;
+	margin: 0;
+}
+
+/***********
+Navigation
+************/
+
+.navwrapper {
+	margin: 10px 0px;
+	width: 100%;
+	float: left;
+}
+
+.menu ul {
+	font-size: 1em;
+}
+
+
+/***********
+Main
+************/
+
+.wrapper2 {
+	width: 100%;
+
+}
+
+.main {
+	width: 100%;
+	margin: 0px;	
+}
+
+/***********
+Sidebar
+************/
+
+.sidebar1wrapper {
+	margin: 0;
+	width: 96%;/* This isn;t right, but it's a quick fix*/
+}
+
+.sidebar1 {
+	margin: 0;
+	width: 100%;
+}
+
+.sidebar2wrapper {
+	margin: 10px 0;
+	width: 96%;/* This isn;t right, but it's a quick fix*/
+}
+
+.sidebar2 {
+	margin: 0;
+	width: 100%;
+}
+
+/***********
+Footer
+************/
+
+.footer {
+	width: 100%;
+}
+
+}
+
+
+
+/***************************************** Media queries - for the iphone *******************************************/
+
+@media only screen and (max-device-width: 480px) { /* iPhone */
+
+/***********
+Page attributes
+************/
+
+html {-webkit-text-size-adjust:auto;} /* not sure what this does yet*/
+
+.wrapper1 {
+	width: 100%; /* needs to be 960px or 100%*/
+}
+
+h1#logo {
+	font-size: 3em;
+}
+
+
+/***********
+Top section
+************/
+
+.header {
+	margin: 0;
+	width: 100%;
+}
+
+.strapline {
+	margin: 0;
+}
+
+
+/***********
+Navigation
+************/
+
+.navwrapper {
+	margin: 10px 10px 10px 0;
+	width: 100%;
+	float: left;
+}
+
+.menu ul {
+	list-style: none;
+	text-align: left;
+	/*font-size: 3.5em;*/
+	display: inline;
+}
+
+
+/***********
+Main
+************/
+
+.wrapper2 {
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+	margin: 0;
+}
+
+.post {
+	margin: 0;
+}
+
+.post h2 {
+	margin: 0;
+	/*font-size: 5em;*/
+	
+}
+
+.post li {
+	/*font-size: 3em;*/
+}
+
+iframe {
+	max-width: 100%;
+	height: 250px;
+}
+
+/***********
+Sidebar
+************/
+
+.sidebar1wrapper {
+	margin: 0;
+	width: 93%;/* This isn;t right, but it's a quick fix*/
+}
+
+.sidebar1 {
+	margin: 0;
+	width: 100%;
+}
+
+.sidebar2wrapper {
+	display: none;
+}
+
+
+
+
+/***********
+Footer
+
+************/
+.footer {
+	margin: 0;
+	width: 100%;
+}
+
+.footer p {
+	/*font-size: 2em;*/
+}
+
+
+/***********
+Comments
+************/
+
+.comments ol, .comments ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	/*line-height: 1.5em;*/
+}
+
+.comments ul {
+	padding-left: 40px;
+}
+
+.comment-body p {
+	font-size: 1em;
+}
+
+.comment-author {
+	/*line-height: 3em;*/
+}
+
+.comment-form-author label, .comment-form-email label, .comment-form-url label {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.comment-form-comment label {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.form-submit {
+	display: block;
+	padding-left: 0%;
+}
+
+}
+
+
+/* -------------------------------------------------------------- 
+   
+   Basic WordPress Blog Styles   
+     
+-------------------------------------------------------------- */   
+
+
+/* Images
+-------------------------------------------------------------- */
+
+.entry-content img {
+	margin: 0 0 1.5em 0;
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+  margin-right: 1.5em;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+  margin-left: 1.5em;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	margin: 0;
+}
+.wp-smiley { 
+	max-height: 1em;
+	margin:0 !important;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery-caption {
+	margin:-1.5em 0 0 0;
+}
+
+
+/* Pullquotes
+-------------------------------------------------------------- */
+
+blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+	text-align: right;
+	width: 33%;
+}
+blockquote.right {
+	float: right;
+	margin-left: 20px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
+
+
+
+
+
