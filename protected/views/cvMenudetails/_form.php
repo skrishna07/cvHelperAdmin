@@ -35,11 +35,8 @@
 		<?php echo $form->labelEx($model,'has_sub_menu'); ?>
 		<?php 
 		echo $form->dropDownList($model,
-
                         'has_sub_menu',
-
                         array('Y'=>'Y','N'=>'N'),
-
                         array('empty'=>'Select Option'));
 		?>
 		<?php echo $form->error($model,'has_sub_menu'); ?>
